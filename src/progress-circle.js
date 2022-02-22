@@ -38,7 +38,7 @@ class ProgressCircle extends PureComponent {
 
         const { height, width } = this.state
 
-        const outerDiameter = Math.min(width, height)
+        const outerDiameter = parseInt(Math.min(width, height))
 
         if (!isFinite(progress) || isNaN(progress)) {
             progress = 0
